@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="greetings">Welcome to my App!</string>
+    <string name="start">Login</string>
+    <string name="user">Username:</string>
+    <string name="pass">Password:</string>
+    <string name="sign_up">Sign up</string>
+    <string name="link">https://github.com/StarBlnk</string>
+</resources>
