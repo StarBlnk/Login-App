@@ -24,12 +24,20 @@
                 android:value="com.example.LoginApp.MainActivity" />
         </activity>
         <activity android:name="com.example.LoginApp.Welcome_page"
-            android:parentActivityName="com.example.LoginApp.MainActivity">
+            android:parentActivityName="com.example.LoginApp.Login">
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.LoginApp.MainActivity" />
         </activity>
+        <activity android:name="com.example.LoginApp.Password_change"
+            android:parentActivityName="com.example.LoginApp.Welcome_page">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.LoginApp.MainActivity" />
+        </activity>
+
         <activity android:name="com.example.LoginApp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

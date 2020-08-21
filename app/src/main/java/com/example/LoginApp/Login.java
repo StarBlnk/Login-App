@@ -49,6 +49,11 @@ public class Login extends AppCompatActivity {
         else{
             checkBox1.setChecked(false);
         }
+        Cursor res = myDb.getAllData();
+        if(res.getCount() == 0){
+            checkBox1.setChecked(false);
+        }
+
 
 
 

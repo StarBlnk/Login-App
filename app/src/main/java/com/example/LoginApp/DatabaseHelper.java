@@ -51,4 +51,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("select  * from " + TABLE_NAME, null);
         return res;
     }
+
+    public boolean updateData(String username, String password){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COL_2, username);
+        contentValues.put(COL_3, password);
+        db.update(TABLE_NAME, contentValues, "USERNAME = ?", new String[] {username});
+        return true;
+    }
 }
